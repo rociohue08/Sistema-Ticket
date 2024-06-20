@@ -1,0 +1,104 @@
+body {
+    font-family: Arial, sans-serif;
+    padding: 2cm;
+    text-align: center;
+    background-color: #4d5df0;
+}
+
+h1{
+   
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+h2 {
+    color: #333;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color:  #f9f9f9;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.main-content {
+    flex: 2;
+    padding: 20px;
+    border-right: 1px solid #ddd;
+}
+
+.side-content {
+    flex: 1;
+    padding: 20px;
+    background-color: #f9f9f9;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    margin-bottom: 10px;
+    background-color: #588ae8;
+    padding: 15px;
+    border-radius: 5px;
+}
+
+#ticket-llamado {
+    font-size: 1.5em;
+    margin-top: 20px;
+    margin-left: 3cm;
+    margin-right: 3cm;
+    padding: 10px;
+    background-color: #c95cfb;
+    border: 1px solid #000000;
+    border-radius: 20px;
+}
+
+#ultimos-tickets {
+    color: #ffffff;
+    margin-top: 20px;
+}
+
+#estadisticas {
+    margin-top: 20px;
+    font-style: italic;
+    color: #000000;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 1em;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+@media (max-width: 768px) {
+    body {
+        padding: 10px;
+    }
+
+    .container {
+        flex-direction: column;
+    }
+
+    .main-content, .side-content {
+        border-right: none;
+        border-bottom: 1px solid #ddd;
+    }
+}

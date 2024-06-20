@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema de Tickets</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>SISTEMA DE TICKETS</h1>
+    <div class="container">
+        <div class="main-content">
+            <h2>Llamando a:</h2>
+            <div id="ticket-llamado">Esperando llamado de ticket...</div>
+            <h3>TICKETS ATENDIDOS HOY</h3>
+            <div id="estadisticas"></div>
+            <br>
+            <button id="btn-solicitar-ticket">Solicitar Nuevo Ticket</button>
+        </div>
+        <div class="side-content">
+            <h2>TICKETS PREVIOS</h2>
+            <ul id="ultimos-tickets"></ul>
+        </div>
+    </div>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
